@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TNC</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair%20Display' rel='stylesheet'>
+    <style>
+      body {
+        background-color: black;
+        font-family: 'Playfair Display';
+        color: white;
+        text-align: center;
+      }
+      .custom-button {
+        background-color: Silver;
+        padding: 2.5px;
+        margin-top: 7px;
+        display: block;
+        width: 40%;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        font-family: 'Playfair Display';
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="animation.gif" style="width: 100%">
+    <p><br></p>
+    <p style="font-size: 60px"><b>Welcome to Tuffy and Cookie's Memories</b></p>
+    <p style="font-size: 40px">Dedicated to Dunia (a.k.a. Tuffy)</p>
+    <p style="font-size: 20px">Click the button below to go to a randomly selected page: <br><br></p>
+    <button class="custom-button" onclick="chooseRandomPage()">Go to a Random Page</button>
+    <script>
+      function chooseRandomPage() {
+        var pages = [
+          "https://loxingle.github.io/TNC/SEAOFSTARS.html",
+          "https://loxingle.github.io/TNC/DUCKHOUSE.html",
+          "https://loxingle.github.io/TNC/FLOWERFIELD.html",
+          "https://loxingle.github.io/TNC/SNOWDEER.html",
+          "https://loxingle.github.io/TNC/MOONSEA.html",
+          "https://loxingle.github.io/TNC/MAKEUP.html",
+          "https://loxingle.github.io/TNC/BLUEBLOSSOM.html",
+          "https://loxingle.github.io/TNC/CLASSY.html",
+          "https://loxingle.github.io/TNC/WOLF.html",
+          "https://loxingle.github.io/TNC/EYES.html",
+          "https://loxingle.github.io/TNC/MOONFRIEND.html",
+          "https://loxingle.github.io/TNC/POM.html",
+          "https://loxingle.github.io/TNC/AURORA.html",
+          "https://loxingle.github.io/TNC/SEAPAINT.html",
+          "https://loxingle.github.io/TNC/WOLFDUCK.html",
+          "https://loxingle.github.io/TNC/DUCKDUCK.html",
+          "https://loxingle.github.io/TNC/BABYWOLF.html",
+          "https://loxingle.github.io/TNC/DUNIA9.html"
+        ];
+        var randomIndex = Math.floor(Math.random() * pages.length);
+        window.location.href = pages[randomIndex];
+      }
+    </script>
+  </body>
+</html>
